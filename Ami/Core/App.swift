@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct AmiApp: App {
-    @StateObject private var themeManager = ThemeManager(defaultTheme: PurpleTheme())
+    private let themeManager = ThemeManager(defaultTheme: PurpleTheme())
 
     var body: some Scene {
         WindowGroup {
