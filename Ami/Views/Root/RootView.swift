@@ -12,12 +12,16 @@ struct RootView: View {
     @EnvironmentObject private var themeManager: ThemeManager
 
     var body: some View {
-        Image(systemName: "heart.fill")
-            .font(.title)
-            .foregroundColor(themeManager.current.mainColor)
-            .onTapGesture {
-                themeManager.changeTheme(to: .red)
-            }
+        VStack {
+            Image(systemName: "heart.fill")
+                .font(.title)
+                .foregroundColor(themeManager.current.mainColor)
+                .onTapGesture {
+                    themeManager.changeTheme(to: .red)
+                }
+
+            Text("Ami")
+        }
     }
 }
 
