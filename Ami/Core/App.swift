@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct AmiApp: App {
+    private let themeManager = ThemeManager(defaultTheme: PurpleTheme())
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(themeManager)
         }
     }
 }
