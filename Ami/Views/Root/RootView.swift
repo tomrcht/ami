@@ -8,20 +8,26 @@
 import SwiftUI
 
 struct RootView: View {
+    @State private var page: Page = .home
+
     @Injected(\.helloProvider) private var hello: any HelloProviding
     @EnvironmentObject private var themeManager: ThemeManager
 
     var body: some View {
-        VStack {
-            Image(systemName: "heart.fill")
-                .font(.title)
-                .foregroundColor(themeManager.current.mainColor)
-                .onTapGesture {
-                    themeManager.changeTheme(to: .red)
+        ZStack {
+            Group {
+                switch page {
+                case .home:
+                    HomeView()
+                case .settings:
+                    Text("!")
                 }
+            }
 
-            Text("Ami")
-                .font(.heavy(ofSize: 16))
+            VStack {
+                Spacer()
+                AmiTabBar(selection: $page)
+            }
         }
     }
 }

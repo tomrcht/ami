@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21F577B28FAAE2B007E69A8 /* AmiTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */; };
 		E2375CC428EF6C73007E9C8F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CC328EF6C73007E9C8F /* App.swift */; };
 		E2375CC828EF6C76007E9C8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2375CC728EF6C76007E9C8F /* Assets.xcassets */; };
 		E2375CCB28EF6C76007E9C8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2375CCA28EF6C76007E9C8F /* Preview Assets.xcassets */; };
@@ -23,9 +24,12 @@
 		E2375CEE28F0BE43007E9C8F /* GreenTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CED28F0BE43007E9C8F /* GreenTheme.swift */; };
 		E2375CF028F0C086007E9C8F /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CEF28F0C086007E9C8F /* Themes.swift */; };
 		E2375CF428F17462007E9C8F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CF328F17462007E9C8F /* Fonts.swift */; };
+		E2A9861A28FAB68B00BAE9FA /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9861928FAB68B00BAE9FA /* Page.swift */; };
+		E2A9861D28FADAAA00BAE9FA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9861C28FADAAA00BAE9FA /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiTabBar.swift; sourceTree = "<group>"; };
 		E2375CC028EF6C73007E9C8F /* Ami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2375CC328EF6C73007E9C8F /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		E2375CC728EF6C76007E9C8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +47,8 @@
 		E2375CED28F0BE43007E9C8F /* GreenTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenTheme.swift; sourceTree = "<group>"; };
 		E2375CEF28F0C086007E9C8F /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		E2375CF328F17462007E9C8F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E2A9861928FAB68B00BAE9FA /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		E2A9861C28FADAAA00BAE9FA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E21F577828FAAD8E007E69A8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E21F577928FAAD98007E69A8 /* AmiTabBar */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E21F577928FAAD98007E69A8 /* AmiTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */,
+			);
+			path = AmiTabBar;
+			sourceTree = "<group>";
+		};
 		E2375CB728EF6C73007E9C8F = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +100,7 @@
 				E2375CD128EF6C92007E9C8F /* Core */,
 				E2375CD228EF6C9D007E9C8F /* Providers */,
 				E2375CD328EF6CA7007E9C8F /* Views */,
+				E21F577828FAAD8E007E69A8 /* Components */,
 				E2375CC728EF6C76007E9C8F /* Assets.xcassets */,
 				E2375CC928EF6C76007E9C8F /* Preview Content */,
 			);
@@ -114,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				E2375CD428EF6CD1007E9C8F /* Root */,
+				E2A9861B28FADA9E00BAE9FA /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				E2375CD528EF6CDD007E9C8F /* RootView.swift */,
+				E2A9861928FAB68B00BAE9FA /* Page.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -173,6 +198,14 @@
 				E2375CF328F17462007E9C8F /* Fonts.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E2A9861B28FADA9E00BAE9FA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E2A9861C28FADAAA00BAE9FA /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,12 +280,15 @@
 			files = (
 				E2375CF428F17462007E9C8F /* Fonts.swift in Sources */,
 				E2375CE728F0BD46007E9C8F /* Theme.swift in Sources */,
+				E2A9861A28FAB68B00BAE9FA /* Page.swift in Sources */,
 				E2375CEA28F0BD9B007E9C8F /* PurpleTheme.swift in Sources */,
 				E2375CD628EF6CDD007E9C8F /* RootView.swift in Sources */,
+				E2A9861D28FADAAA00BAE9FA /* HomeView.swift in Sources */,
 				E2375CE528F0BB7D007E9C8F /* HelloProviderInjection.swift in Sources */,
 				E2375CE328F0BB22007E9C8F /* HelloProvider.swift in Sources */,
 				E2375CDE28F0B768007E9C8F /* InjectionKey.swift in Sources */,
 				E2375CC428EF6C73007E9C8F /* App.swift in Sources */,
+				E21F577B28FAAE2B007E69A8 /* AmiTabBar.swift in Sources */,
 				E2375CEE28F0BE43007E9C8F /* GreenTheme.swift in Sources */,
 				E2375CF028F0C086007E9C8F /* Themes.swift in Sources */,
 				E2375CEC28F0BE22007E9C8F /* RedTheme.swift in Sources */,

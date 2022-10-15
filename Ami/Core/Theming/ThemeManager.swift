@@ -10,6 +10,10 @@ import Foundation
 final class ThemeManager: ObservableObject {
     @Published private(set) var current: any Theme
 
+    init() {
+        self.current = Themes.default.value
+    }
+
     init(defaultTheme: any Theme) {
         self.current = defaultTheme
     }
