@@ -32,7 +32,7 @@ struct LiquidCanvasView: View {
                 }
             }
         } symbols: {
-            liquidShape(ofSize: 112).tag(0)
+            liquidShape(ofSize: 112, offset: offset.applying(.init(scaleX: 0.1, y: 0.1))).tag(0)
             liquidShape(ofSize: 112, offset: offset).tag(1)
         }
         .gesture(
