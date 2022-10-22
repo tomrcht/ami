@@ -8,18 +8,34 @@
 import SwiftUI
 
 struct HomeView: View {
-    @EnvironmentObject private var themeManager: ThemeManager
-    var body: some View {
-        VStack {
-            Image(systemName: "heart.fill")
-                .font(.title)
-                .foregroundColor(themeManager.current.mainColor)
-                .onTapGesture {
-                    themeManager.changeTheme(to: .red)
-                }
+    @EnvironmentObject private var theme: ThemeManager
 
-            Text("Ami")
-                .font(.heavy(ofSize: 16))
+    var body: some View {
+        NavigationStack {
+            List {
+                Section("View / Animations / Transitions") {
+                    NavigationLink {
+                        TransitionsView()
+                    } label: {
+                        label("Transitions", systemIcon: "arrowshape.zigzag.forward")
+                    }
+
+                    NavigationLink {
+                        CanvasView()
+                    } label: {
+                        label("Canvas", systemIcon: "paintpalette")
+                    }
+                }
+            }
+        }
+    }
+
+    private func label(_ title: any StringProtocol, systemIcon: String) -> some View {
+        Label {
+            Text(title)
+        } icon: {
+            Image(systemName: systemIcon)
+                .foregroundColor(theme.current.primary)
         }
     }
 }

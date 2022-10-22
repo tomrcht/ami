@@ -19,14 +19,27 @@ struct AmiTabBar: View {
         HStack {
             Group {
                 ForEach(Page.all) { page in
-                    Item(
-                        icon: Image(systemName: page.iconName),
-                        name: page.name
-                    )
-                    .foregroundColor(selection.id == page.id ? themeManager.current.mainColor : .black)
-                    .onTapGesture {
-                        guard selection.id != page.id else { return }
-                        selection = page
+                    let isSelected = selection.id == page.id
+
+                    ZStack(alignment: .bottom) {
+                        if isSelected {
+                            Circle()
+                                .fill(themeManager.current.primary)
+                                .frame(width: 8, height: 8)
+                                .padding(.bottom, 8)
+                        }
+
+                        Item(
+                            icon: Image(systemName: page.iconName),
+                            name: page.name,
+                            isSelected: isSelected
+                        )
+                        .onTapGesture {
+                            guard selection.id != page.id else { return }
+                            withAnimation {
+                                selection = page
+                            }
+                        }
                     }
                 }
             }
@@ -35,7 +48,7 @@ struct AmiTabBar: View {
         }
         .background(Color.white)
         .clipShape(RoundedRectangle(cornerRadius: 16))
-        .padding(.horizontal, 24)
+        .shadow(color: themeManager.current.text.opacity(0.2), radius: 3, x: 0, y: 0)
         .frame(maxHeight: 56)
     }
 }
@@ -44,6 +57,7 @@ extension AmiTabBar {
     struct Item: View {
         let icon: Image
         let name: String
+        let isSelected: Bool
 
         var body: some View {
             VStack(alignment: .center, spacing: 8) {
@@ -55,6 +69,7 @@ extension AmiTabBar {
 
                 Text(name)
                     .font(.regular(ofSize: 12))
+                    .opacity(isSelected ? 0 : 1)
             }
         }
     }
@@ -64,5 +79,6 @@ struct AmiTabBar_Previews: PreviewProvider {
     static var previews: some View {
         AmiTabBar(selection: .constant(.home))
             .environmentObject(ThemeManager())
+            .padding(24)
     }
 }

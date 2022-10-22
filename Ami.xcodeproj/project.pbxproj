@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E21F577B28FAAE2B007E69A8 /* AmiTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */; };
+		E2313AB429008F3C001C07E2 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2313AB329008F3C001C07E2 /* CanvasView.swift */; };
 		E2375CC428EF6C73007E9C8F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CC328EF6C73007E9C8F /* App.swift */; };
 		E2375CC828EF6C76007E9C8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2375CC728EF6C76007E9C8F /* Assets.xcassets */; };
 		E2375CCB28EF6C76007E9C8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2375CCA28EF6C76007E9C8F /* Preview Assets.xcassets */; };
@@ -20,16 +21,23 @@
 		E2375CE528F0BB7D007E9C8F /* HelloProviderInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CE428F0BB7D007E9C8F /* HelloProviderInjection.swift */; };
 		E2375CE728F0BD46007E9C8F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CE628F0BD46007E9C8F /* Theme.swift */; };
 		E2375CEA28F0BD9B007E9C8F /* PurpleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CE928F0BD9B007E9C8F /* PurpleTheme.swift */; };
-		E2375CEC28F0BE22007E9C8F /* RedTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CEB28F0BE22007E9C8F /* RedTheme.swift */; };
-		E2375CEE28F0BE43007E9C8F /* GreenTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CED28F0BE43007E9C8F /* GreenTheme.swift */; };
 		E2375CF028F0C086007E9C8F /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CEF28F0C086007E9C8F /* Themes.swift */; };
 		E2375CF428F17462007E9C8F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CF328F17462007E9C8F /* Fonts.swift */; };
 		E2A9861A28FAB68B00BAE9FA /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9861928FAB68B00BAE9FA /* Page.swift */; };
 		E2A9861D28FADAAA00BAE9FA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9861C28FADAAA00BAE9FA /* HomeView.swift */; };
+		E2A9862228FB060F00BAE9FA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9862128FB060F00BAE9FA /* SettingsView.swift */; };
+		E2B3E79529033E0D00A437C3 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3E79429033E0D00A437C3 /* Particle.swift */; };
+		E2B3E79729033E6300A437C3 /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3E79629033E6300A437C3 /* ParticleSystem.swift */; };
+		E2B3E79A29033F2100A437C3 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3E79929033F2100A437C3 /* Color+Extension.swift */; };
+		E2B3E79E2903450700A437C3 /* GradientCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3E79D2903450700A437C3 /* GradientCanvasView.swift */; };
+		E2B3E7A02903454600A437C3 /* ParticlesCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3E79F2903454600A437C3 /* ParticlesCanvasView.swift */; };
+		E2B3E7A32903457E00A437C3 /* LiquidCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3E7A22903457E00A437C3 /* LiquidCanvasView.swift */; };
+		E2EC960628FCA109006D6351 /* TransitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC960528FCA109006D6351 /* TransitionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiTabBar.swift; sourceTree = "<group>"; };
+		E2313AB329008F3C001C07E2 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		E2375CC028EF6C73007E9C8F /* Ami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2375CC328EF6C73007E9C8F /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		E2375CC728EF6C76007E9C8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,12 +51,18 @@
 		E2375CE428F0BB7D007E9C8F /* HelloProviderInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloProviderInjection.swift; sourceTree = "<group>"; };
 		E2375CE628F0BD46007E9C8F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		E2375CE928F0BD9B007E9C8F /* PurpleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleTheme.swift; sourceTree = "<group>"; };
-		E2375CEB28F0BE22007E9C8F /* RedTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedTheme.swift; sourceTree = "<group>"; };
-		E2375CED28F0BE43007E9C8F /* GreenTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenTheme.swift; sourceTree = "<group>"; };
 		E2375CEF28F0C086007E9C8F /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		E2375CF328F17462007E9C8F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		E2A9861928FAB68B00BAE9FA /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		E2A9861C28FADAAA00BAE9FA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E2A9862128FB060F00BAE9FA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E2B3E79429033E0D00A437C3 /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		E2B3E79629033E6300A437C3 /* ParticleSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSystem.swift; sourceTree = "<group>"; };
+		E2B3E79929033F2100A437C3 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E2B3E79D2903450700A437C3 /* GradientCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCanvasView.swift; sourceTree = "<group>"; };
+		E2B3E79F2903454600A437C3 /* ParticlesCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesCanvasView.swift; sourceTree = "<group>"; };
+		E2B3E7A22903457E00A437C3 /* LiquidCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidCanvasView.swift; sourceTree = "<group>"; };
+		E2EC960528FCA109006D6351 /* TransitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +90,17 @@
 				E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */,
 			);
 			path = AmiTabBar;
+			sourceTree = "<group>";
+		};
+		E2313AB229008F2E001C07E2 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				E2B3E7A12903457300A437C3 /* Liquid */,
+				E2B3E79C290344F500A437C3 /* Gradient */,
+				E2B3E79B290344CB00A437C3 /* Particles */,
+				E2313AB329008F3C001C07E2 /* CanvasView.swift */,
+			);
+			path = Canvas;
 			sourceTree = "<group>";
 		};
 		E2375CB728EF6C73007E9C8F = {
@@ -118,9 +143,10 @@
 		E2375CD128EF6C92007E9C8F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E2375CC328EF6C73007E9C8F /* App.swift */,
+				E2B3E79829033F0800A437C3 /* Utilities */,
 				E2375CDA28F0B73F007E9C8F /* DI */,
 				E2375CD728EF6D0C007E9C8F /* Theming */,
-				E2375CC328EF6C73007E9C8F /* App.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -136,8 +162,11 @@
 		E2375CD328EF6CA7007E9C8F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E2313AB229008F2E001C07E2 /* Canvas */,
+				E2EC960428FCA0F7006D6351 /* Transitions */,
 				E2375CD428EF6CD1007E9C8F /* Root */,
 				E2A9861B28FADA9E00BAE9FA /* Home */,
+				E2A9862028FB05FD00BAE9FA /* Settings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,8 +215,6 @@
 			children = (
 				E2375CEF28F0C086007E9C8F /* Themes.swift */,
 				E2375CE928F0BD9B007E9C8F /* PurpleTheme.swift */,
-				E2375CEB28F0BE22007E9C8F /* RedTheme.swift */,
-				E2375CED28F0BE43007E9C8F /* GreenTheme.swift */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -206,6 +233,56 @@
 				E2A9861C28FADAAA00BAE9FA /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		E2A9862028FB05FD00BAE9FA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E2A9862128FB060F00BAE9FA /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E2B3E79829033F0800A437C3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E2B3E79929033F2100A437C3 /* Color+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E2B3E79B290344CB00A437C3 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				E2B3E79429033E0D00A437C3 /* Particle.swift */,
+				E2B3E79629033E6300A437C3 /* ParticleSystem.swift */,
+				E2B3E79F2903454600A437C3 /* ParticlesCanvasView.swift */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		E2B3E79C290344F500A437C3 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				E2B3E79D2903450700A437C3 /* GradientCanvasView.swift */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+		E2B3E7A12903457300A437C3 /* Liquid */ = {
+			isa = PBXGroup;
+			children = (
+				E2B3E7A22903457E00A437C3 /* LiquidCanvasView.swift */,
+			);
+			path = Liquid;
+			sourceTree = "<group>";
+		};
+		E2EC960428FCA0F7006D6351 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				E2EC960528FCA109006D6351 /* TransitionsView.swift */,
+			);
+			path = Transitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,23 +355,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B3E7A32903457E00A437C3 /* LiquidCanvasView.swift in Sources */,
 				E2375CF428F17462007E9C8F /* Fonts.swift in Sources */,
+				E2B3E79A29033F2100A437C3 /* Color+Extension.swift in Sources */,
+				E2EC960628FCA109006D6351 /* TransitionsView.swift in Sources */,
 				E2375CE728F0BD46007E9C8F /* Theme.swift in Sources */,
 				E2A9861A28FAB68B00BAE9FA /* Page.swift in Sources */,
 				E2375CEA28F0BD9B007E9C8F /* PurpleTheme.swift in Sources */,
+				E2B3E79529033E0D00A437C3 /* Particle.swift in Sources */,
 				E2375CD628EF6CDD007E9C8F /* RootView.swift in Sources */,
 				E2A9861D28FADAAA00BAE9FA /* HomeView.swift in Sources */,
 				E2375CE528F0BB7D007E9C8F /* HelloProviderInjection.swift in Sources */,
+				E2B3E7A02903454600A437C3 /* ParticlesCanvasView.swift in Sources */,
+				E2313AB429008F3C001C07E2 /* CanvasView.swift in Sources */,
 				E2375CE328F0BB22007E9C8F /* HelloProvider.swift in Sources */,
+				E2B3E79E2903450700A437C3 /* GradientCanvasView.swift in Sources */,
 				E2375CDE28F0B768007E9C8F /* InjectionKey.swift in Sources */,
 				E2375CC428EF6C73007E9C8F /* App.swift in Sources */,
 				E21F577B28FAAE2B007E69A8 /* AmiTabBar.swift in Sources */,
-				E2375CEE28F0BE43007E9C8F /* GreenTheme.swift in Sources */,
 				E2375CF028F0C086007E9C8F /* Themes.swift in Sources */,
-				E2375CEC28F0BE22007E9C8F /* RedTheme.swift in Sources */,
 				E2375CD928EF6D1A007E9C8F /* ThemeManager.swift in Sources */,
+				E2B3E79729033E6300A437C3 /* ParticleSystem.swift in Sources */,
 				E2375CDC28F0B75D007E9C8F /* InjectionResolver.swift in Sources */,
 				E2375CE028F0B771007E9C8F /* Injected.swift in Sources */,
+				E2A9862228FB060F00BAE9FA /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

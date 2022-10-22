@@ -9,8 +9,6 @@ import SwiftUI
 
 struct RootView: View {
     @State private var page: Page = .home
-
-    @Injected(\.helloProvider) private var hello: any HelloProviding
     @EnvironmentObject private var themeManager: ThemeManager
 
     var body: some View {
@@ -20,15 +18,17 @@ struct RootView: View {
                 case .home:
                     HomeView()
                 case .settings:
-                    Text("!")
+                    SettingsView()
                 }
             }
 
-            VStack {
-                Spacer()
-                AmiTabBar(selection: $page)
-            }
+//            VStack {
+//                Spacer()
+//                AmiTabBar(selection: $page)
+//                    .padding(.horizontal, 24)
+//            }
         }
+        .background(themeManager.current.background)
     }
 }
 
