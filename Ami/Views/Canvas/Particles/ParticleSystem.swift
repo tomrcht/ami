@@ -8,26 +8,46 @@
 import SwiftUI
 
 final class ParticleSystem {
-    var particles: [Particle]
+    private(set) var particles: Set<Particle>
 
-    init(particles: [Particle]) {
+    init(particles: Set<Particle>) {
         self.particles = particles
     }
 
     convenience init() {
-        self.init(particles: [])
+        self.init(particles: Set<Particle>())
     }
 
     convenience init(count: Int) {
-        self.init(particles: [])
-
+        self.init(particles: Set<Particle>())
         for _ in 0..<count {
             let particle = Particle(
                 id: UUID().uuidString,
-                color: Color.random(),
-                size: 8
+                size: .random(in: 2...8),
+                color: .random(),
+                lifeTime: 10,
+                origin: .center,
+                velocity: .random(in: 10...200),
+                direction: .random(in: -Double.pi...Double.pi)
             )
-            particles.append(particle)
+            particles.insert(particle)
+        }
+    }
+
+    func addParticle(_ particle: Particle) {
+        particles.insert(particle)
+    }
+
+    func tick(at time: TimeInterval) {
+        for particle in particles {
+            manageLifeTime(for: particle, currentTime: time)
+        }
+    }
+
+    private func manageLifeTime(for particle: Particle, currentTime: TimeInterval) {
+        let existentialTime = currentTime - particle.spawnTime
+        if existentialTime >= particle.lifeTime {
+            particles.remove(particle)
         }
     }
 }

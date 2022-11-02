@@ -8,21 +8,12 @@
 import SwiftUI
 
 struct CanvasView: View {
-    @State private var animationPaused = false
-
     var body: some View {
-        VStack {
-            Spacer()
+//        GradientCanvasView()
 
-            TimelineView(.animation(minimumInterval: nil, paused: animationPaused)) { timelineContext in
-                LiquidCanvasView()
-            }
+        ParticlesCanvasView()
 
-            Spacer()
-
-            Button(animationPaused ? "Play" : "Pause") { animationPaused.toggle() }
-                .padding(.bottom, 56)
-        }
+//        LiquidCanvasView()
     }
 }
 
