@@ -26,6 +26,14 @@ struct HomeView: View {
                         label("Canvas", systemIcon: "paintpalette")
                     }
                 }
+
+                Section("Other") {
+                    NavigationLink {
+                        LuminanceView()
+                    } label: {
+                        label("Luminance", systemIcon: "rays")
+                    }
+                }
             }
         }
     }

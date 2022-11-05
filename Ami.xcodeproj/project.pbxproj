@@ -23,6 +23,11 @@
 		E2375CEA28F0BD9B007E9C8F /* PurpleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CE928F0BD9B007E9C8F /* PurpleTheme.swift */; };
 		E2375CF028F0C086007E9C8F /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CEF28F0C086007E9C8F /* Themes.swift */; };
 		E2375CF428F17462007E9C8F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CF328F17462007E9C8F /* Fonts.swift */; };
+		E26AE8F52916CE3C006918BD /* LuminanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AE8F42916CE3C006918BD /* LuminanceView.swift */; };
+		E26AE8F72916D9AD006918BD /* LuminanceColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AE8F62916D9AD006918BD /* LuminanceColorSlider.swift */; };
+		E26AE8FA2916E437006918BD /* LuminanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AE8F92916E437006918BD /* LuminanceProvider.swift */; };
+		E26AE8FC2916E449006918BD /* LuminanceProviderInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AE8FB2916E449006918BD /* LuminanceProviderInjection.swift */; };
+		E26AE9002916ED22006918BD /* RGBValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AE8FF2916ED22006918BD /* RGBValues.swift */; };
 		E2A9861A28FAB68B00BAE9FA /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9861928FAB68B00BAE9FA /* Page.swift */; };
 		E2A9861D28FADAAA00BAE9FA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9861C28FADAAA00BAE9FA /* HomeView.swift */; };
 		E2A9862228FB060F00BAE9FA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9862128FB060F00BAE9FA /* SettingsView.swift */; };
@@ -53,6 +58,11 @@
 		E2375CE928F0BD9B007E9C8F /* PurpleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleTheme.swift; sourceTree = "<group>"; };
 		E2375CEF28F0C086007E9C8F /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		E2375CF328F17462007E9C8F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E26AE8F42916CE3C006918BD /* LuminanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceView.swift; sourceTree = "<group>"; };
+		E26AE8F62916D9AD006918BD /* LuminanceColorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceColorSlider.swift; sourceTree = "<group>"; };
+		E26AE8F92916E437006918BD /* LuminanceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceProvider.swift; sourceTree = "<group>"; };
+		E26AE8FB2916E449006918BD /* LuminanceProviderInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceProviderInjection.swift; sourceTree = "<group>"; };
+		E26AE8FF2916ED22006918BD /* RGBValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBValues.swift; sourceTree = "<group>"; };
 		E2A9861928FAB68B00BAE9FA /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		E2A9861C28FADAAA00BAE9FA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E2A9862128FB060F00BAE9FA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -122,6 +132,7 @@
 		E2375CC228EF6C73007E9C8F /* Ami */ = {
 			isa = PBXGroup;
 			children = (
+				E26AE8FD2916ED11006918BD /* Models */,
 				E2375CD128EF6C92007E9C8F /* Core */,
 				E2375CD228EF6C9D007E9C8F /* Providers */,
 				E2375CD328EF6CA7007E9C8F /* Views */,
@@ -154,6 +165,7 @@
 		E2375CD228EF6C9D007E9C8F /* Providers */ = {
 			isa = PBXGroup;
 			children = (
+				E26AE8F82916E428006918BD /* LuminanceProvider */,
 				E2375CE128F0BA93007E9C8F /* HelloProvider */,
 			);
 			path = Providers;
@@ -162,6 +174,7 @@
 		E2375CD328EF6CA7007E9C8F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E26AE8F32916CE2F006918BD /* Luminance */,
 				E2313AB229008F2E001C07E2 /* Canvas */,
 				E2EC960428FCA0F7006D6351 /* Transitions */,
 				E2375CD428EF6CD1007E9C8F /* Root */,
@@ -225,6 +238,40 @@
 				E2375CF328F17462007E9C8F /* Fonts.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E26AE8F32916CE2F006918BD /* Luminance */ = {
+			isa = PBXGroup;
+			children = (
+				E26AE8F42916CE3C006918BD /* LuminanceView.swift */,
+				E26AE8F62916D9AD006918BD /* LuminanceColorSlider.swift */,
+			);
+			path = Luminance;
+			sourceTree = "<group>";
+		};
+		E26AE8F82916E428006918BD /* LuminanceProvider */ = {
+			isa = PBXGroup;
+			children = (
+				E26AE8F92916E437006918BD /* LuminanceProvider.swift */,
+				E26AE8FB2916E449006918BD /* LuminanceProviderInjection.swift */,
+			);
+			path = LuminanceProvider;
+			sourceTree = "<group>";
+		};
+		E26AE8FD2916ED11006918BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E26AE8FE2916ED15006918BD /* Supporting */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E26AE8FE2916ED15006918BD /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				E26AE8FF2916ED22006918BD /* RGBValues.swift */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 		E2A9861B28FADA9E00BAE9FA /* Home */ = {
@@ -355,18 +402,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26AE9002916ED22006918BD /* RGBValues.swift in Sources */,
 				E2B3E7A32903457E00A437C3 /* LiquidCanvasView.swift in Sources */,
 				E2375CF428F17462007E9C8F /* Fonts.swift in Sources */,
 				E2B3E79A29033F2100A437C3 /* Color+Extension.swift in Sources */,
 				E2EC960628FCA109006D6351 /* TransitionsView.swift in Sources */,
 				E2375CE728F0BD46007E9C8F /* Theme.swift in Sources */,
+				E26AE8FA2916E437006918BD /* LuminanceProvider.swift in Sources */,
+				E26AE8FC2916E449006918BD /* LuminanceProviderInjection.swift in Sources */,
 				E2A9861A28FAB68B00BAE9FA /* Page.swift in Sources */,
 				E2375CEA28F0BD9B007E9C8F /* PurpleTheme.swift in Sources */,
+				E26AE8F52916CE3C006918BD /* LuminanceView.swift in Sources */,
 				E2B3E79529033E0D00A437C3 /* Particle.swift in Sources */,
 				E2375CD628EF6CDD007E9C8F /* RootView.swift in Sources */,
 				E2A9861D28FADAAA00BAE9FA /* HomeView.swift in Sources */,
 				E2375CE528F0BB7D007E9C8F /* HelloProviderInjection.swift in Sources */,
 				E2B3E7A02903454600A437C3 /* ParticlesCanvasView.swift in Sources */,
+				E26AE8F72916D9AD006918BD /* LuminanceColorSlider.swift in Sources */,
 				E2313AB429008F3C001C07E2 /* CanvasView.swift in Sources */,
 				E2375CE328F0BB22007E9C8F /* HelloProvider.swift in Sources */,
 				E2B3E79E2903450700A437C3 /* GradientCanvasView.swift in Sources */,
