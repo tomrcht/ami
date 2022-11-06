@@ -34,6 +34,9 @@ struct LuminanceView: View {
     @Injected(\.luminanceProvider) private var luminanceProvider
     @EnvironmentObject private var theme: ThemeManager
 
+    /// Threshold value to decide wether text should be white or black
+    ///
+    /// See: [WCAG 2.1](https://www.w3.org/TR/2018/REC-WCAG21-20180605/)
     private let threshold = 0.179
     private let sampleText = """
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, \
@@ -73,21 +76,11 @@ struct LuminanceView: View {
 
                 Spacer()
             }
+            .padding(.horizontal, 24)
         }
-        .padding(.horizontal, 24)
         .background(theme.current.background)
-        .onChange(of: rgbValues) { _ in
-            let red = rgbValues.red / 255
-            let green = rgbValues.green / 255
-            let blue = rgbValues.blue / 255
-
-            if algorithm == .simple {
-                luminance = luminanceProvider.simple(red: red, green: green, blue: blue)
-            } else {
-                luminance = luminanceProvider.complex(red: red, green: green, blue: blue)
-                perceivedLightness = luminanceProvider.perceivedLightness(luminance: luminance)
-            }
-        }
+        .onChange(of: rgbValues) { _ in calculateLuminance() }
+        .onChange(of: algorithm) { _ in calculateLuminance() } // ... redundant ? idk how to merge both `.onChange`
     }
 
     private var infoView: some View {
@@ -111,7 +104,7 @@ struct LuminanceView: View {
     }
 
     private var settingsView: some View {
-        VStack {
+        VStack(spacing: 8) {
             HStack {
                 Text("Settings")
                     .foregroundColor(theme.current.text)
@@ -157,11 +150,27 @@ struct LuminanceView: View {
     private func getSampleTextColor() -> Color {
         switch textColor {
         case .auto:
-            return .red
+            return luminance > threshold ? .black : .white
         case .light:
             return .white
         case .dark:
             return .black
+        }
+    }
+
+    private func calculateLuminance() {
+        let red = rgbValues.red / 255
+        let green = rgbValues.green / 255
+        let blue = rgbValues.blue / 255
+
+        switch algorithm {
+        case .simple:
+            luminance = luminanceProvider.simple(red: red, green: green, blue: blue)
+            // perceived lightness does not technically makes sense if we don't use the complex algorithm
+            // so we just drop it in this case
+        case .complex:
+            luminance = luminanceProvider.complex(red: red, green: green, blue: blue)
+            perceivedLightness = luminanceProvider.perceivedLightness(luminance: luminance)
         }
     }
 }

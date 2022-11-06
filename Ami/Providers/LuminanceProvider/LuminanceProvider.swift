@@ -20,7 +20,9 @@ struct LuminanceProvider: LuminanceProviding {
     /// The resulting value, while not the most correct, takes into account the fact that the human eye is more
     /// sensible to green light and less to red and blue light
     ///
-    /// Source : [Relative luminance Wikipedia page](https://en.wikipedia.org/wiki/Relative_luminance)
+    /// **Sources**
+    /// - [Relative luminance Wikipedia page](https://en.wikipedia.org/wiki/Relative_luminance)
+    /// - [WCAG 2.1](https://www.w3.org/TR/2018/REC-WCAG21-20180605/)
     ///
     /// - parameters:
     ///     - red: The red component of the color, must be in range 0...1
