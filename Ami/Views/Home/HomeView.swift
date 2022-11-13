@@ -33,6 +33,12 @@ struct HomeView: View {
                     } label: {
                         label("Luminance", systemIcon: "rays")
                     }
+
+                    NavigationLink {
+                        ImageViewerView()
+                    } label: {
+                        label("Image viewer", systemIcon: "photo.artframe")
+                    }
                 }
             }
         }
