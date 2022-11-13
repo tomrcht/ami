@@ -40,6 +40,7 @@
 		E2BD867029216811000EDC58 /* ImageViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD866F29216811000EDC58 /* ImageViewerView.swift */; };
 		E2BD867229216CE7000EDC58 /* ImageViewerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD867129216CE7000EDC58 /* ImageViewerSettingsView.swift */; };
 		E2BD867729217145000EDC58 /* assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD867629217145000EDC58 /* assets.generated.swift */; };
+		E2BD86792921739D000EDC58 /* AssetListEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD86782921739D000EDC58 /* AssetListEntry.swift */; };
 		E2EC960628FCA109006D6351 /* TransitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC960528FCA109006D6351 /* TransitionsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		E2BD866F29216811000EDC58 /* ImageViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerView.swift; sourceTree = "<group>"; };
 		E2BD867129216CE7000EDC58 /* ImageViewerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerSettingsView.swift; sourceTree = "<group>"; };
 		E2BD867629217145000EDC58 /* assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = assets.generated.swift; sourceTree = "<group>"; };
+		E2BD86782921739D000EDC58 /* AssetListEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListEntry.swift; sourceTree = "<group>"; };
 		E2EC960528FCA109006D6351 /* TransitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -337,6 +339,7 @@
 			children = (
 				E2BD866F29216811000EDC58 /* ImageViewerView.swift */,
 				E2BD867129216CE7000EDC58 /* ImageViewerSettingsView.swift */,
+				E2BD86782921739D000EDC58 /* AssetListEntry.swift */,
 			);
 			path = ImageViewer;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		E2BD867529216EAA000EDC58 /* 💜 AMI - SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 12;
 			files = (
 			);
@@ -469,6 +473,7 @@
 				E2B3E7A02903454600A437C3 /* ParticlesCanvasView.swift in Sources */,
 				E26AE8F72916D9AD006918BD /* LuminanceColorSlider.swift in Sources */,
 				E2313AB429008F3C001C07E2 /* CanvasView.swift in Sources */,
+				E2BD86792921739D000EDC58 /* AssetListEntry.swift in Sources */,
 				E2BD867029216811000EDC58 /* ImageViewerView.swift in Sources */,
 				E2375CE328F0BB22007E9C8F /* HelloProvider.swift in Sources */,
 				E2B3E79E2903450700A437C3 /* GradientCanvasView.swift in Sources */,
