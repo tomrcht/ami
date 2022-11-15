@@ -24,12 +24,12 @@ struct ImageViewerSettingsView: View {
 
     var body: some View {
         VStack {
-            List(selection: $selectedAsset) {
+            ScrollView {
                 ForEach(assets) { entry in
                     HStack {
                         Image(entry.assetName)
                             .resizable()
-                            .frame(width: 48, height: 48)
+                            .frame(width: 56, height: 56)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
 
                         Text(entry.name)
@@ -40,11 +40,27 @@ struct ImageViewerSettingsView: View {
                             Spacer()
                             Image(systemName: "checkmark")
                         }
+
+                        Spacer()
+
+                        if selectedAsset?.id == entry.id {
+                            Image(systemName: "checkmark")
+                                .resizable()
+                                .frame(width: 12, height: 12)
+                                .foregroundColor(theme.current.primary)
+                        }
+                    }
+                    .onTapGesture {
+                        selectedAsset = entry
                     }
                 }
+                .padding(16)
+                .background(Color.white)
+                .clipShape(RoundedRectangle(cornerRadius: 8))
+                .padding(.horizontal, 32)
             }
-            .listStyle(PlainListStyle())
-            .padding(.horizontal, 20)
+
+            Spacer()
 
             Button {
                 dismiss()
