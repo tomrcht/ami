@@ -27,6 +27,14 @@ struct HomeView: View {
                     }
                 }
 
+                Section("Gestures") {
+                    NavigationLink {
+                        DragGestureView()
+                    } label: {
+                        label("Drag gesture", systemIcon: "hand.draw.fill")
+                    }
+                }
+
                 Section("Other") {
                     NavigationLink {
                         LuminanceView()

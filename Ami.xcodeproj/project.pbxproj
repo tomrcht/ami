@@ -41,6 +41,8 @@
 		E2BD867229216CE7000EDC58 /* ImageViewerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD867129216CE7000EDC58 /* ImageViewerSettingsView.swift */; };
 		E2BD867729217145000EDC58 /* assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD867629217145000EDC58 /* assets.generated.swift */; };
 		E2BD86792921739D000EDC58 /* AssetListEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD86782921739D000EDC58 /* AssetListEntry.swift */; };
+		E2C67813292A794E00C38A61 /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C67812292A794E00C38A61 /* DragGestureView.swift */; };
+		E2C67815292A797300C38A61 /* MovableSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C67814292A797300C38A61 /* MovableSquare.swift */; };
 		E2EC960628FCA109006D6351 /* TransitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC960528FCA109006D6351 /* TransitionsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		E2BD867129216CE7000EDC58 /* ImageViewerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerSettingsView.swift; sourceTree = "<group>"; };
 		E2BD867629217145000EDC58 /* assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = assets.generated.swift; sourceTree = "<group>"; };
 		E2BD86782921739D000EDC58 /* AssetListEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListEntry.swift; sourceTree = "<group>"; };
+		E2C67812292A794E00C38A61 /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
+		E2C67814292A797300C38A61 /* MovableSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovableSquare.swift; sourceTree = "<group>"; };
 		E2EC960528FCA109006D6351 /* TransitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,13 +187,14 @@
 		E2375CD328EF6CA7007E9C8F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E2C67811292A792F00C38A61 /* DragGesture */,
 				E2BD866E292167E8000EDC58 /* ImageViewer */,
 				E26AE8F32916CE2F006918BD /* Luminance */,
 				E2313AB229008F2E001C07E2 /* Canvas */,
 				E2EC960428FCA0F7006D6351 /* Transitions */,
-				E2375CD428EF6CD1007E9C8F /* Root */,
-				E2A9861B28FADA9E00BAE9FA /* Home */,
 				E2A9862028FB05FD00BAE9FA /* Settings */,
+				E2A9861B28FADA9E00BAE9FA /* Home */,
+				E2375CD428EF6CD1007E9C8F /* Root */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -352,6 +357,15 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		E2C67811292A792F00C38A61 /* DragGesture */ = {
+			isa = PBXGroup;
+			children = (
+				E2C67812292A794E00C38A61 /* DragGestureView.swift */,
+				E2C67814292A797300C38A61 /* MovableSquare.swift */,
+			);
+			path = DragGesture;
+			sourceTree = "<group>";
+		};
 		E2EC960428FCA0F7006D6351 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C67815292A797300C38A61 /* MovableSquare.swift in Sources */,
 				E26AE9002916ED22006918BD /* RGBValues.swift in Sources */,
 				E2BD867729217145000EDC58 /* assets.generated.swift in Sources */,
 				E2BD867229216CE7000EDC58 /* ImageViewerSettingsView.swift in Sources */,
@@ -483,6 +498,7 @@
 				E2375CF028F0C086007E9C8F /* Themes.swift in Sources */,
 				E2375CD928EF6D1A007E9C8F /* ThemeManager.swift in Sources */,
 				E2B3E79729033E6300A437C3 /* ParticleSystem.swift in Sources */,
+				E2C67813292A794E00C38A61 /* DragGestureView.swift in Sources */,
 				E2375CDC28F0B75D007E9C8F /* InjectionResolver.swift in Sources */,
 				E2375CE028F0B771007E9C8F /* Injected.swift in Sources */,
 				E2A9862228FB060F00BAE9FA /* SettingsView.swift in Sources */,
