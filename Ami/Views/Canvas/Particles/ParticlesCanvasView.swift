@@ -24,6 +24,7 @@ struct ParticlesCanvasView: View {
                         assertionFailure()
                         return
                     }
+
                     context.draw(symbol, at: drawPoint)
                 }
             } symbols: {

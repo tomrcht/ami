@@ -25,7 +25,7 @@ final class ParticleSystem {
                 id: UUID().uuidString,
                 size: .random(in: 2...8),
                 color: .random(),
-                lifeTime: 10,
+                lifeTime: .random(in: 2...5),
                 origin: .center,
                 velocity: .random(in: 10...200),
                 direction: .random(in: -Double.pi...Double.pi)
