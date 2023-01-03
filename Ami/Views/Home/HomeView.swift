@@ -43,10 +43,17 @@ struct HomeView: View {
                     }
 
                     NavigationLink {
+                        ShareSheetView()
+                    } label: {
+                        label("Share sheet", systemIcon: "square.and.arrow.up")
+                    }
+
+                    NavigationLink {
                         ImageViewerView()
                     } label: {
-                        label("Image viewer", systemIcon: "photo.artframe")
+                        label("[KO] Image viewer", systemIcon: "photo.artframe")
                     }
+                    .disabled(true)
                 }
             }
         }

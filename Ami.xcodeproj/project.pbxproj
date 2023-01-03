@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92026CCF29545E0C0083722C /* ShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92026CCE29545E0C0083722C /* ShareSheetView.swift */; };
+		92026CD7295461650083722C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92026CD6295461650083722C /* ShareViewController.swift */; };
+		92026CDE295461650083722C /* EMShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 92026CD4295461650083722C /* EMShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E21F577B28FAAE2B007E69A8 /* AmiTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */; };
 		E2313AB429008F3C001C07E2 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2313AB329008F3C001C07E2 /* CanvasView.swift */; };
 		E2375CC428EF6C73007E9C8F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CC328EF6C73007E9C8F /* App.swift */; };
@@ -46,7 +49,35 @@
 		E2EC960628FCA109006D6351 /* TransitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC960528FCA109006D6351 /* TransitionsView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		92026CDC295461650083722C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2375CB828EF6C73007E9C8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92026CD3295461650083722C;
+			remoteInfo = EMShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92026CE2295461650083722C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				92026CDE295461650083722C /* EMShare.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		92026CCE29545E0C0083722C /* ShareSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetView.swift; sourceTree = "<group>"; };
+		92026CD4295461650083722C /* EMShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EMShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		92026CD6295461650083722C /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		92026CDB295461650083722C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiTabBar.swift; sourceTree = "<group>"; };
 		E2313AB329008F3C001C07E2 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		E2375CC028EF6C73007E9C8F /* Ami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ami.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +119,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		92026CD1295461650083722C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2375CBD28EF6C73007E9C8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,6 +136,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92026CCA29545DB00083722C /* Visuals */ = {
+			isa = PBXGroup;
+			children = (
+				E2313AB229008F2E001C07E2 /* Canvas */,
+				E2EC960428FCA0F7006D6351 /* Transitions */,
+			);
+			path = Visuals;
+			sourceTree = "<group>";
+		};
+		92026CCB29545DBE0083722C /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				E2C67811292A792F00C38A61 /* DragGesture */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		92026CCC29545DC50083722C /* Uncategorized */ = {
+			isa = PBXGroup;
+			children = (
+				92026CCD29545DFF0083722C /* ShareSheet */,
+				E2BD866E292167E8000EDC58 /* ImageViewer */,
+				E26AE8F32916CE2F006918BD /* Luminance */,
+			);
+			path = Uncategorized;
+			sourceTree = "<group>";
+		};
+		92026CCD29545DFF0083722C /* ShareSheet */ = {
+			isa = PBXGroup;
+			children = (
+				92026CCE29545E0C0083722C /* ShareSheetView.swift */,
+			);
+			path = ShareSheet;
+			sourceTree = "<group>";
+		};
+		92026CD5295461650083722C /* EMShare */ = {
+			isa = PBXGroup;
+			children = (
+				92026CD6295461650083722C /* ShareViewController.swift */,
+				92026CDB295461650083722C /* Info.plist */,
+			);
+			path = EMShare;
+			sourceTree = "<group>";
+		};
 		E21F577828FAAD8E007E69A8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				E2375CC228EF6C73007E9C8F /* Ami */,
+				92026CD5295461650083722C /* EMShare */,
 				E2375CC128EF6C73007E9C8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				E2375CC028EF6C73007E9C8F /* Ami.app */,
+				92026CD4295461650083722C /* EMShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,14 +271,12 @@
 		E2375CD328EF6CA7007E9C8F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E2C67811292A792F00C38A61 /* DragGesture */,
-				E2BD866E292167E8000EDC58 /* ImageViewer */,
-				E26AE8F32916CE2F006918BD /* Luminance */,
-				E2313AB229008F2E001C07E2 /* Canvas */,
-				E2EC960428FCA0F7006D6351 /* Transitions */,
-				E2A9862028FB05FD00BAE9FA /* Settings */,
 				E2A9861B28FADA9E00BAE9FA /* Home */,
 				E2375CD428EF6CD1007E9C8F /* Root */,
+				E2A9862028FB05FD00BAE9FA /* Settings */,
+				92026CCA29545DB00083722C /* Visuals */,
+				92026CCB29545DBE0083722C /* Gestures */,
+				92026CCC29545DC50083722C /* Uncategorized */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -377,6 +459,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		92026CD3295461650083722C /* EMShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92026CDF295461650083722C /* Build configuration list for PBXNativeTarget "EMShare" */;
+			buildPhases = (
+				92026CD0295461650083722C /* Sources */,
+				92026CD1295461650083722C /* Frameworks */,
+				92026CD2295461650083722C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMShare;
+			productName = EMShare;
+			productReference = 92026CD4295461650083722C /* EMShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E2375CBF28EF6C73007E9C8F /* Ami */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2375CCE28EF6C76007E9C8F /* Build configuration list for PBXNativeTarget "Ami" */;
@@ -385,10 +484,12 @@
 				E2375CBC28EF6C73007E9C8F /* Sources */,
 				E2375CBD28EF6C73007E9C8F /* Frameworks */,
 				E2375CBE28EF6C73007E9C8F /* Resources */,
+				92026CE2295461650083722C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				92026CDD295461650083722C /* PBXTargetDependency */,
 			);
 			name = Ami;
 			productName = Ami;
@@ -405,6 +506,9 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					92026CD3295461650083722C = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					E2375CBF28EF6C73007E9C8F = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -424,11 +528,19 @@
 			projectRoot = "";
 			targets = (
 				E2375CBF28EF6C73007E9C8F /* Ami */,
+				92026CD3295461650083722C /* EMShare */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		92026CD2295461650083722C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2375CBE28EF6C73007E9C8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,6 +575,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		92026CD0295461650083722C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92026CD7295461650083722C /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2375CBC28EF6C73007E9C8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -477,6 +597,7 @@
 				E2EC960628FCA109006D6351 /* TransitionsView.swift in Sources */,
 				E2375CE728F0BD46007E9C8F /* Theme.swift in Sources */,
 				E26AE8FA2916E437006918BD /* LuminanceProvider.swift in Sources */,
+				92026CCF29545E0C0083722C /* ShareSheetView.swift in Sources */,
 				E26AE8FC2916E449006918BD /* LuminanceProviderInjection.swift in Sources */,
 				E2A9861A28FAB68B00BAE9FA /* Page.swift in Sources */,
 				E2375CEA28F0BD9B007E9C8F /* PurpleTheme.swift in Sources */,
@@ -507,7 +628,65 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		92026CDD295461650083722C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92026CD3295461650083722C /* EMShare */;
+			targetProxy = 92026CDC295461650083722C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		92026CE0295461650083722C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75W97CWTS7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EMShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EMShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koapp.Ami.EMShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92026CE1295461650083722C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75W97CWTS7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EMShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EMShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koapp.Ami.EMShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E2375CCC28EF6C76007E9C8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -625,6 +804,7 @@
 		E2375CCF28EF6C76007E9C8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -654,6 +834,7 @@
 		E2375CD028EF6C76007E9C8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -683,6 +864,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		92026CDF295461650083722C /* Build configuration list for PBXNativeTarget "EMShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92026CE0295461650083722C /* Debug */,
+				92026CE1295461650083722C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E2375CBB28EF6C73007E9C8F /* Build configuration list for PBXProject "Ami" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
