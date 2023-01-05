@@ -10,20 +10,21 @@ import SwiftUI
 struct TwitterLikeView: View {
     @State private var liked = false
 
-    @State private var showRedHeart = false
-    @State private var redHeartScale: CGFloat = 0.2
 
-    @State private var showCircularRings = false
-    @State private var circularRingScaleRate: CGFloat = 0.2
-    @State private var circularRingColor = Color.red
-    @State private var whiteCircularRingScaleRate: CGFloat = 0.1
+    @State private var showFilledHeart = false
+    @State private var filledHeartScale: CGFloat = 0.2
+
+    @State private var showAnimationRings = false
+    @State private var outerRingScale: CGFloat = 0.2
+    @State private var outerRingColor = Color.red
+    @State private var innerRingScale: CGFloat = 0.1
 
     @Environment(\.colorScheme) var colorScheme
 
     private let size: CGFloat = 100
 
     private var buttonOpacity: CGFloat {
-        if showRedHeart { return 1 }
+        if showFilledHeart { return 1 }
         return liked ? 0 : 1
     }
     private var defaultButtonColor: Color {
@@ -33,16 +34,16 @@ struct TwitterLikeView: View {
     var body: some View {
         ZStack {
             Circle()
-                .fill(circularRingColor)
-                .scaleEffect(circularRingScaleRate)
+                .fill(outerRingColor)
+                .scaleEffect(outerRingScale)
                 .frame(width: size, height: size)
-                .opacity(showCircularRings ? 1 : 0)
+                .opacity(showAnimationRings ? 1 : 0)
 
             Circle()
                 .fill(colorScheme == .light ? .white : .black)
-                .scaleEffect(whiteCircularRingScaleRate)
+                .scaleEffect(innerRingScale)
                 .frame(width: size, height: size)
-                .opacity(showCircularRings ? 1 : 0)
+                .opacity(showAnimationRings ? 1 : 0)
 
             Button {
                 liked ? unlike() : like()
@@ -50,9 +51,9 @@ struct TwitterLikeView: View {
                 Image(systemName: liked ? "heart.fill" : "heart")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .foregroundColor(showRedHeart ? .red : defaultButtonColor)
+                    .foregroundColor(showFilledHeart ? .red : defaultButtonColor)
                     .frame(width: size, height: size)
-                    .scaleEffect(liked ? redHeartScale : 1)
+                    .scaleEffect(liked ? filledHeartScale : 1)
             }
             .buttonStyle(.plain)
             .opacity(buttonOpacity)
@@ -61,38 +62,38 @@ struct TwitterLikeView: View {
 
     private func like() {
         liked.toggle()
-        showCircularRings.toggle()
+        showAnimationRings.toggle()
 
         withAnimation(.easeInOut(duration: 0.2)) {
-            circularRingScaleRate = 1.2
+            outerRingScale = 1.2
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             withAnimation(.easeInOut(duration: 0.2)) {
-                circularRingColor = .purple
-                whiteCircularRingScaleRate = 1.2
+                outerRingColor = .purple
+                innerRingScale = 1.2
             }
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             withAnimation(.easeInOut(duration: 0.1)) {
-                showCircularRings.toggle()
-                showRedHeart.toggle()
+                showAnimationRings.toggle()
+                showFilledHeart.toggle()
             }
             withAnimation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.1)) {
-                redHeartScale = 1
+                filledHeartScale = 1
             }
         }
     }
 
     private func unlike() {
         liked = false
-        showRedHeart = false
-        redHeartScale = 0.2
-        showCircularRings = false
-        circularRingScaleRate = 0.2
-        circularRingColor = .red
-        whiteCircularRingScaleRate = 0.1
+        showFilledHeart = false
+        filledHeartScale = 0.2
+        showAnimationRings = false
+        outerRingScale = 0.2
+        outerRingColor = .red
+        innerRingScale = 0.1
     }
 }
 

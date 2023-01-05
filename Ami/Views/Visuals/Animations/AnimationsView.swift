@@ -14,6 +14,7 @@ struct AnimationsView: View {
                 TwitterLikeView()
                 ButtonScaleAnimationView()
             }
+            .frame(maxWidth: .infinity)
         }
     }
 }
