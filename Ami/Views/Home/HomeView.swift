@@ -21,6 +21,12 @@ struct HomeView: View {
                     }
 
                     NavigationLink {
+                        AnimationsView()
+                    } label: {
+                        label("Animations", systemIcon: "wand.and.stars")
+                    }
+
+                    NavigationLink {
                         CanvasView()
                     } label: {
                         label("Canvas", systemIcon: "paintpalette")

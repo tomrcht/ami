@@ -10,6 +10,8 @@
 		92026CCF29545E0C0083722C /* ShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92026CCE29545E0C0083722C /* ShareSheetView.swift */; };
 		92026CD7295461650083722C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92026CD6295461650083722C /* ShareViewController.swift */; };
 		92026CDE295461650083722C /* EMShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 92026CD4295461650083722C /* EMShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		925CA94B2966C4DC00492ABC /* AnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925CA94A2966C4DC00492ABC /* AnimationsView.swift */; };
+		925CA94D2966C58F00492ABC /* TwitterLikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925CA94C2966C58F00492ABC /* TwitterLikeView.swift */; };
 		E21F577B28FAAE2B007E69A8 /* AmiTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */; };
 		E2313AB429008F3C001C07E2 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2313AB329008F3C001C07E2 /* CanvasView.swift */; };
 		E2375CC428EF6C73007E9C8F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CC328EF6C73007E9C8F /* App.swift */; };
@@ -78,6 +80,8 @@
 		92026CD4295461650083722C /* EMShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EMShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		92026CD6295461650083722C /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		92026CDB295461650083722C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		925CA94A2966C4DC00492ABC /* AnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsView.swift; sourceTree = "<group>"; };
+		925CA94C2966C58F00492ABC /* TwitterLikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterLikeView.swift; sourceTree = "<group>"; };
 		E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiTabBar.swift; sourceTree = "<group>"; };
 		E2313AB329008F3C001C07E2 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		E2375CC028EF6C73007E9C8F /* Ami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ami.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +143,7 @@
 		92026CCA29545DB00083722C /* Visuals */ = {
 			isa = PBXGroup;
 			children = (
+				925CA9492966C4CE00492ABC /* Animations */,
 				E2313AB229008F2E001C07E2 /* Canvas */,
 				E2EC960428FCA0F7006D6351 /* Transitions */,
 			);
@@ -178,6 +183,15 @@
 				92026CDB295461650083722C /* Info.plist */,
 			);
 			path = EMShare;
+			sourceTree = "<group>";
+		};
+		925CA9492966C4CE00492ABC /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				925CA94A2966C4DC00492ABC /* AnimationsView.swift */,
+				925CA94C2966C58F00492ABC /* TwitterLikeView.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		E21F577828FAAD8E007E69A8 /* Components */ = {
@@ -602,9 +616,11 @@
 				E2A9861A28FAB68B00BAE9FA /* Page.swift in Sources */,
 				E2375CEA28F0BD9B007E9C8F /* PurpleTheme.swift in Sources */,
 				E26AE8F52916CE3C006918BD /* LuminanceView.swift in Sources */,
+				925CA94B2966C4DC00492ABC /* AnimationsView.swift in Sources */,
 				E2B3E79529033E0D00A437C3 /* Particle.swift in Sources */,
 				E2375CD628EF6CDD007E9C8F /* RootView.swift in Sources */,
 				E2A9861D28FADAAA00BAE9FA /* HomeView.swift in Sources */,
+				925CA94D2966C58F00492ABC /* TwitterLikeView.swift in Sources */,
 				E2375CE528F0BB7D007E9C8F /* HelloProviderInjection.swift in Sources */,
 				E2B3E7A02903454600A437C3 /* ParticlesCanvasView.swift in Sources */,
 				E26AE8F72916D9AD006918BD /* LuminanceColorSlider.swift in Sources */,

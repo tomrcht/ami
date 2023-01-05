@@ -83,13 +83,31 @@ final class CustomShareViewController: UIViewController {
 
 @objc(CustomShareNavigationController)
 final class CustomShareNavigationController: UINavigationController {
+    private lazy var label: UILabel = {
+        let label = UILabel()
+        label.text = "<some custom design here>"
+        label.textColor = .white
+        label.font = .systemFont(ofSize: 12, weight: .bold)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setViewControllers([CustomShareViewController()], animated: false)
+        setupUI()
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError()
+    }
+
+    private func setupUI() {
+        view.addSubview(label)
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+        ])
     }
 }
 
