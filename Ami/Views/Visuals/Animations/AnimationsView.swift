@@ -9,12 +9,11 @@ import SwiftUI
 
 struct AnimationsView: View {
     var body: some View {
-        VStack(spacing: 24) {
-            Spacer()
-
-            TwitterLikeView()
-
-            Spacer()
+        ScrollView {
+            VStack(spacing: 24) {
+                TwitterLikeView()
+                ButtonScaleAnimationView()
+            }
         }
     }
 }

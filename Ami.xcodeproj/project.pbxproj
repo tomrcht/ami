@@ -12,6 +12,7 @@
 		92026CDE295461650083722C /* EMShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 92026CD4295461650083722C /* EMShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		925CA94B2966C4DC00492ABC /* AnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925CA94A2966C4DC00492ABC /* AnimationsView.swift */; };
 		925CA94D2966C58F00492ABC /* TwitterLikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925CA94C2966C58F00492ABC /* TwitterLikeView.swift */; };
+		925CA9512967030300492ABC /* ButtonScaleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925CA9502967030300492ABC /* ButtonScaleAnimationView.swift */; };
 		E21F577B28FAAE2B007E69A8 /* AmiTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */; };
 		E2313AB429008F3C001C07E2 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2313AB329008F3C001C07E2 /* CanvasView.swift */; };
 		E2375CC428EF6C73007E9C8F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CC328EF6C73007E9C8F /* App.swift */; };
@@ -82,6 +83,7 @@
 		92026CDB295461650083722C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		925CA94A2966C4DC00492ABC /* AnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsView.swift; sourceTree = "<group>"; };
 		925CA94C2966C58F00492ABC /* TwitterLikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterLikeView.swift; sourceTree = "<group>"; };
+		925CA9502967030300492ABC /* ButtonScaleAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonScaleAnimationView.swift; sourceTree = "<group>"; };
 		E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiTabBar.swift; sourceTree = "<group>"; };
 		E2313AB329008F3C001C07E2 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		E2375CC028EF6C73007E9C8F /* Ami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ami.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				925CA94A2966C4DC00492ABC /* AnimationsView.swift */,
+				925CA9502967030300492ABC /* ButtonScaleAnimationView.swift */,
 				925CA94C2966C58F00492ABC /* TwitterLikeView.swift */,
 			);
 			path = Animations;
@@ -621,6 +624,7 @@
 				E2375CD628EF6CDD007E9C8F /* RootView.swift in Sources */,
 				E2A9861D28FADAAA00BAE9FA /* HomeView.swift in Sources */,
 				925CA94D2966C58F00492ABC /* TwitterLikeView.swift in Sources */,
+				925CA9512967030300492ABC /* ButtonScaleAnimationView.swift in Sources */,
 				E2375CE528F0BB7D007E9C8F /* HelloProviderInjection.swift in Sources */,
 				E2B3E7A02903454600A437C3 /* ParticlesCanvasView.swift in Sources */,
 				E26AE8F72916D9AD006918BD /* LuminanceColorSlider.swift in Sources */,

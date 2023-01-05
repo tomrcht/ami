@@ -20,7 +20,7 @@ struct TwitterLikeView: View {
 
     @Environment(\.colorScheme) var colorScheme
 
-    private let size: CGFloat = 24
+    private let size: CGFloat = 100
 
     private var buttonOpacity: CGFloat {
         if showRedHeart { return 1 }
@@ -60,10 +60,9 @@ struct TwitterLikeView: View {
     }
 
     private func like() {
-        withAnimation(.easeInOut(duration: 0.01)) {
-            liked.toggle()
-            showCircularRings.toggle()
-        }
+        liked.toggle()
+        showCircularRings.toggle()
+
         withAnimation(.easeInOut(duration: 0.2)) {
             circularRingScaleRate = 1.2
         }
