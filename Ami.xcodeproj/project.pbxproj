@@ -13,6 +13,12 @@
 		925CA94B2966C4DC00492ABC /* AnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925CA94A2966C4DC00492ABC /* AnimationsView.swift */; };
 		925CA94D2966C58F00492ABC /* TwitterLikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925CA94C2966C58F00492ABC /* TwitterLikeView.swift */; };
 		925CA9512967030300492ABC /* ButtonScaleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925CA9502967030300492ABC /* ButtonScaleAnimationView.swift */; };
+		E2000E8D29698FAA00D80B74 /* EmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000E8C29698FAA00D80B74 /* EmitterView.swift */; };
+		E2000E8F2969905D00D80B74 /* EmitterRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000E8E2969905D00D80B74 /* EmitterRepresentable.swift */; };
+		E2000E91296990E000D80B74 /* EmitterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000E90296990E000D80B74 /* EmitterConfiguration.swift */; };
+		E2000E93296992EF00D80B74 /* EmitterContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000E92296992EF00D80B74 /* EmitterContent.swift */; };
+		E2000E952969A31300D80B74 /* EmitterValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000E942969A31200D80B74 /* EmitterValues.swift */; };
+		E2000E972969A97300D80B74 /* ConfettiRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000E962969A97300D80B74 /* ConfettiRepresentable.swift */; };
 		E21F577B28FAAE2B007E69A8 /* AmiTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */; };
 		E2313AB429008F3C001C07E2 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2313AB329008F3C001C07E2 /* CanvasView.swift */; };
 		E2375CC428EF6C73007E9C8F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375CC328EF6C73007E9C8F /* App.swift */; };
@@ -84,6 +90,12 @@
 		925CA94A2966C4DC00492ABC /* AnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsView.swift; sourceTree = "<group>"; };
 		925CA94C2966C58F00492ABC /* TwitterLikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterLikeView.swift; sourceTree = "<group>"; };
 		925CA9502967030300492ABC /* ButtonScaleAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonScaleAnimationView.swift; sourceTree = "<group>"; };
+		E2000E8C29698FAA00D80B74 /* EmitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterView.swift; sourceTree = "<group>"; };
+		E2000E8E2969905D00D80B74 /* EmitterRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterRepresentable.swift; sourceTree = "<group>"; };
+		E2000E90296990E000D80B74 /* EmitterConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterConfiguration.swift; sourceTree = "<group>"; };
+		E2000E92296992EF00D80B74 /* EmitterContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterContent.swift; sourceTree = "<group>"; };
+		E2000E942969A31200D80B74 /* EmitterValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterValues.swift; sourceTree = "<group>"; };
+		E2000E962969A97300D80B74 /* ConfettiRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiRepresentable.swift; sourceTree = "<group>"; };
 		E21F577A28FAAE2B007E69A8 /* AmiTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiTabBar.swift; sourceTree = "<group>"; };
 		E2313AB329008F3C001C07E2 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		E2375CC028EF6C73007E9C8F /* Ami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ami.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +157,7 @@
 		92026CCA29545DB00083722C /* Visuals */ = {
 			isa = PBXGroup;
 			children = (
+				E2000E8B29698F9600D80B74 /* Emitter particles */,
 				925CA9492966C4CE00492ABC /* Animations */,
 				E2313AB229008F2E001C07E2 /* Canvas */,
 				E2EC960428FCA0F7006D6351 /* Transitions */,
@@ -195,6 +208,19 @@
 				925CA94C2966C58F00492ABC /* TwitterLikeView.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		E2000E8B29698F9600D80B74 /* Emitter particles */ = {
+			isa = PBXGroup;
+			children = (
+				E2000E8C29698FAA00D80B74 /* EmitterView.swift */,
+				E2000E8E2969905D00D80B74 /* EmitterRepresentable.swift */,
+				E2000E90296990E000D80B74 /* EmitterConfiguration.swift */,
+				E2000E92296992EF00D80B74 /* EmitterContent.swift */,
+				E2000E942969A31200D80B74 /* EmitterValues.swift */,
+				E2000E962969A97300D80B74 /* ConfettiRepresentable.swift */,
+			);
+			path = "Emitter particles";
 			sourceTree = "<group>";
 		};
 		E21F577828FAAD8E007E69A8 /* Components */ = {
@@ -604,7 +630,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2000E972969A97300D80B74 /* ConfettiRepresentable.swift in Sources */,
 				E2C67815292A797300C38A61 /* MovableSquare.swift in Sources */,
+				E2000E8D29698FAA00D80B74 /* EmitterView.swift in Sources */,
 				E26AE9002916ED22006918BD /* RGBValues.swift in Sources */,
 				E2BD867729217145000EDC58 /* assets.generated.swift in Sources */,
 				E2BD867229216CE7000EDC58 /* ImageViewerSettingsView.swift in Sources */,
@@ -615,13 +643,17 @@
 				E2375CE728F0BD46007E9C8F /* Theme.swift in Sources */,
 				E26AE8FA2916E437006918BD /* LuminanceProvider.swift in Sources */,
 				92026CCF29545E0C0083722C /* ShareSheetView.swift in Sources */,
+				E2000E952969A31300D80B74 /* EmitterValues.swift in Sources */,
 				E26AE8FC2916E449006918BD /* LuminanceProviderInjection.swift in Sources */,
 				E2A9861A28FAB68B00BAE9FA /* Page.swift in Sources */,
 				E2375CEA28F0BD9B007E9C8F /* PurpleTheme.swift in Sources */,
+				E2000E91296990E000D80B74 /* EmitterConfiguration.swift in Sources */,
 				E26AE8F52916CE3C006918BD /* LuminanceView.swift in Sources */,
 				925CA94B2966C4DC00492ABC /* AnimationsView.swift in Sources */,
+				E2000E8F2969905D00D80B74 /* EmitterRepresentable.swift in Sources */,
 				E2B3E79529033E0D00A437C3 /* Particle.swift in Sources */,
 				E2375CD628EF6CDD007E9C8F /* RootView.swift in Sources */,
+				E2000E93296992EF00D80B74 /* EmitterContent.swift in Sources */,
 				E2A9861D28FADAAA00BAE9FA /* HomeView.swift in Sources */,
 				925CA94D2966C58F00492ABC /* TwitterLikeView.swift in Sources */,
 				925CA9512967030300492ABC /* ButtonScaleAnimationView.swift in Sources */,

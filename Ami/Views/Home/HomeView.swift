@@ -31,6 +31,12 @@ struct HomeView: View {
                     } label: {
                         label("Canvas", systemIcon: "paintpalette")
                     }
+
+                    NavigationLink {
+                        EmitterView()
+                    } label: {
+                        label("Particles emitter", systemIcon: "sparkles")
+                    }
                 }
 
                 Section("Gestures") {
