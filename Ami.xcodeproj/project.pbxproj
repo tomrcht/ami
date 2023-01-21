@@ -49,6 +49,7 @@
 		E2B3E79E2903450700A437C3 /* GradientCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3E79D2903450700A437C3 /* GradientCanvasView.swift */; };
 		E2B3E7A02903454600A437C3 /* ParticlesCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3E79F2903454600A437C3 /* ParticlesCanvasView.swift */; };
 		E2B3E7A32903457E00A437C3 /* LiquidCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3E7A22903457E00A437C3 /* LiquidCanvasView.swift */; };
+		E2BBF3372977134900F0240B /* StackAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BBF3362977134900F0240B /* StackAnimationView.swift */; };
 		E2BD867029216811000EDC58 /* ImageViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD866F29216811000EDC58 /* ImageViewerView.swift */; };
 		E2BD867229216CE7000EDC58 /* ImageViewerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD867129216CE7000EDC58 /* ImageViewerSettingsView.swift */; };
 		E2BD867729217145000EDC58 /* assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD867629217145000EDC58 /* assets.generated.swift */; };
@@ -127,6 +128,7 @@
 		E2B3E79D2903450700A437C3 /* GradientCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCanvasView.swift; sourceTree = "<group>"; };
 		E2B3E79F2903454600A437C3 /* ParticlesCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesCanvasView.swift; sourceTree = "<group>"; };
 		E2B3E7A22903457E00A437C3 /* LiquidCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidCanvasView.swift; sourceTree = "<group>"; };
+		E2BBF3362977134900F0240B /* StackAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackAnimationView.swift; sourceTree = "<group>"; };
 		E2BD866F29216811000EDC58 /* ImageViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerView.swift; sourceTree = "<group>"; };
 		E2BD867129216CE7000EDC58 /* ImageViewerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerSettingsView.swift; sourceTree = "<group>"; };
 		E2BD867629217145000EDC58 /* assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = assets.generated.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				925CA94A2966C4DC00492ABC /* AnimationsView.swift */,
 				925CA9502967030300492ABC /* ButtonScaleAnimationView.swift */,
 				925CA94C2966C58F00492ABC /* TwitterLikeView.swift */,
+				E2BBF3362977134900F0240B /* StackAnimationView.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -652,6 +655,7 @@
 				925CA94B2966C4DC00492ABC /* AnimationsView.swift in Sources */,
 				E2000E8F2969905D00D80B74 /* EmitterRepresentable.swift in Sources */,
 				E2B3E79529033E0D00A437C3 /* Particle.swift in Sources */,
+				E2BBF3372977134900F0240B /* StackAnimationView.swift in Sources */,
 				E2375CD628EF6CDD007E9C8F /* RootView.swift in Sources */,
 				E2000E93296992EF00D80B74 /* EmitterContent.swift in Sources */,
 				E2A9861D28FADAAA00BAE9FA /* HomeView.swift in Sources */,

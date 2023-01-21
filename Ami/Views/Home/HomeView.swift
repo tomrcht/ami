@@ -27,6 +27,12 @@ struct HomeView: View {
                     }
 
                     NavigationLink {
+                        StackAnimationView()
+                    } label: {
+                        label("Stack animation", systemIcon: "square.stack.3d.up.fill")
+                    }
+
+                    NavigationLink {
                         CanvasView()
                     } label: {
                         label("Canvas", systemIcon: "paintpalette")
